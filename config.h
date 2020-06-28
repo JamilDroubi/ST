@@ -16,7 +16,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/tcsh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -93,27 +93,50 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 4;
 
+/* bg opacity */
+float alpha = 0.9;
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	/* "black", */
+	/* "red3", */
+	/* "green3", */
+	/* "yellow3", */
+	/* "blue2", */
+	/* "magenta3", */
+	/* "cyan3", */
+	/* "gray90", */
+
+	/*  Dracula Normal 8 */
+	[0]  = "#000000",
+	[1]  = "#ff5555",
+	[2]  = "#50fa7b",
+	[3]  = "#f1fa8c",
+	[4]  = "#caa9fa",
+	[5]  = "#ff79c6",
+	[6]  = "#8be9fd",
+	[7]  = "#bfbfbf",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	/* "gray50", */
+	/* "red", */
+	/* "green", */
+	/* "yellow", */
+	/* "#5c5cff", */
+	/* "magenta", */
+	/* "cyan", */
+	/* "white", */
+
+	/*  Dracula Bright 8 */
+	[8]  = "#575b70",
+	[9]  = "#ff6e67",
+	[10] = "#5af78e",
+	[11] = "#f4f99d",
+	[12] = "#caa9fa",
+	[13] = "#ff92d0",
+	[14] = "#9aedfe",
+	[15] = "#e6e6e6",
 
 	[255] = 0,
 
