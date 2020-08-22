@@ -129,6 +129,16 @@ static const char *colorname[] = {
 	[5]  = "#ff79c6",
 	[6]  = "#8be9fd",
 	[7]  = "#bfbfbf",
+    
+    /* Gruvbox Normal 8 */
+    // [0]  = "#282828",
+    // [1]  = "#cc241d",
+    // [2]  = "#98971a",
+    // [3]  = "#d79921",
+    // [4]  = "#458588",
+    // [5]  = "#b16286",
+    // [6]  = "#689d6a",
+    // [7]  = "#a89984",
 
 	/* 8 bright colors */
 	/* "gray50", */
@@ -150,13 +160,25 @@ static const char *colorname[] = {
 	[14] = "#9aedfe",
 	[15] = "#e6e6e6",
 
+    /* Gruvbox Bright 8 */
+    // [8]  = "#928374",
+    // [9]  = "#fb4934",
+    // [10] = "#b8bb26",
+    // [11] = "#fabd2f",
+    // [12] = "#83a598",
+    // [13] = "#d3869b",
+    // [14] = "#8ec07c",
+    // [15] = "#ebdbb2",
+
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"#282a36", /*  alacritty background color */
-	"#f8f8f2", /*  alacritty foreground color */
+	"#cccccc", /* 256 */
+	"#555555", /* 257 */
+	"#282a36", /* 258 */ /*  dracula background color */
+	"#f8f8f2", /* 259 */ /*  dracula foreground color */
+    "#ebdbb2", /* 260 */ /*  gruvbox background color */
+    "#282828", /* 261 */ /*  gruvbox foreground color */
 };
 
 
@@ -165,7 +187,7 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 259;
-unsigned int defaultbg = 258;
+unsigned int defaultbg = 0;
 static unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
 
